@@ -4,7 +4,6 @@ import requests
 import pickle
 import numpy as np
 import sklearn
-heroku create myapp --buildpack heroku/python
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
